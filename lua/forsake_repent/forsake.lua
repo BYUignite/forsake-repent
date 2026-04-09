@@ -54,7 +54,6 @@ function M.setup()
         prp = utils.hsl_to_hex(320, 50, 60), --"#CC6677"
 
     }
-
     --=============================================================================
     ------------------- Terminal colors
 
@@ -79,7 +78,7 @@ function M.setup()
     -- highlight group colors
     -- variables used multiple times
 
-    local Normal     = { fg = c.c07, bg = c.c01 }
+    local Normal     = { fg = c.c07, bg = c.c00 }
     local Cursor     = { fg = c.c11, bg = c.blk }
     local FoldColumn = { fg = c.c06 } 
     local Visual     = { fg = c.c08, bg = c.c02 } 
@@ -94,7 +93,7 @@ function M.setup()
 
     ------------------- status line 
 
-    hl(0, "SLine1",  { fg=c.c05, bg=c.c01, bold=true })
+    hl(0, "SLine1",  { fg=c.c01, bg=c.c07, bold=true })
     hl(0, "Trans1",  { fg=c.c07, bg=c.c03})
     hl(0, "SLine2",  { fg=c.c07, bg=c.c03, bold=true })
     hl(0, "Trans2",  { fg=c.c03, bg=c.c01})
@@ -202,7 +201,7 @@ function M.setup()
 
     hl(0, "@variable",        { fg = c.c09 })
     hl(0, "@variable.builtin",{ fg = c.red })
-    hl(0, "@property",        { fg = c.blp })
+    hl(0, "@property",        { fg = c.blu })
     hl(0, "@field",           { fg = c.blu })
     hl(0, "@parameter",       { fg = c.org })
 
@@ -343,8 +342,6 @@ function M.setup()
       hi! link TSVariable Identifier
       hi! link TSConstant Constant
     ]])
-
-end
 
 --=============================================================================
 
