@@ -21,35 +21,38 @@ function M.setup()
     --=============================================================================
     -- Palette
 
+    utils = require("utils")
+
     local c = {
 
-        blk = "#000000", --hsl(200, 00,  0),
-        c00 = "#05131A", --hsl(200, 70,  6),
-        c01 = "#0E2B39", --hsl(200, 60, 14),
-        c02 = "#1C4154", --hsl(200, 50, 22),
-        c03 = "#2E576B", --hsl(200, 40, 30),
-        c04 = "#446B7E", --hsl(200, 30, 38),
-        c05 = "#5E7D8D", --hsl(200, 20, 46),
-        c06 = "#7292A1", --hsl(200, 20, 54),
-        c07 = "#8BA5B1", --hsl(200, 20, 62),
-        c08 = "#A3B8C2", --hsl(200, 20, 70),
-        c09 = "#BCCBD2", --hsl(200, 20, 78),
-        c10 = "#D4DEE2", --hsl(200, 20, 86),
-        c11 = "#EDF1F3", --hsl(200, 20, 94),
-        wht = "#ffffff", --hsl(200, 00,100),
+        blk = utils.hsl_to_hex(200, 00,  0), --"#000000",
+        c00 = utils.hsl_to_hex(200, 70,  6), --"#05131A",
+        c01 = utils.hsl_to_hex(200, 60, 14), --"#0E2B39",
+        c02 = utils.hsl_to_hex(200, 50, 22), --"#1C4154",
+        c03 = utils.hsl_to_hex(200, 40, 30), --"#2E576B",
+        c04 = utils.hsl_to_hex(200, 30, 38), --"#446B7E",
+        c05 = utils.hsl_to_hex(200, 20, 46), --"#5E7D8D",
+        c06 = utils.hsl_to_hex(200, 20, 54), --"#7292A1",
+        c07 = utils.hsl_to_hex(200, 20, 62), --"#8BA5B1",
+        c08 = utils.hsl_to_hex(200, 20, 70), --"#A3B8C2",
+        c09 = utils.hsl_to_hex(200, 20, 78), --"#BCCBD2",
+        c10 = utils.hsl_to_hex(200, 20, 86), --"#D4DEE2",
+        c11 = utils.hsl_to_hex(200, 20, 94), --"#EDF1F3",
+        wht = utils.hsl_to_hex(200, 00,100), --"#ffffff",
 
-        red = "#CC8866", --hsl(350, 50, 60)
-        org = "#CCBB66", --hsl( 20, 50, 60)
-        yel = "#AACC66", --hsl( 50, 50, 60)
-        ylg = "#77CC66", --hsl( 80, 50, 60)
-        grn = "#66CC88", --hsl(110, 50, 60)
-        grb = "#66CCBB", --hsl(140, 50, 60)
-        blg = "#66AACC", --hsl(170, 50, 60)
-        blu = "#6677CC", --hsl(200, 50, 60)
-        blp = "#8866CC", --hsl(230, 50, 60)
-        prb = "#BB66CC", --hsl(260, 50, 60)
-        pnk = "#CC66AA", --hsl(290, 50, 60)
-        prp = "#CC6677", --hsl(320, 50, 60)
+        red = utils.hsl_to_hex(350, 50, 60), --"#CC8866"
+        org = utils.hsl_to_hex( 20, 50, 60), --"#CCBB66"
+        yel = utils.hsl_to_hex( 50, 50, 60), --"#AACC66"
+        ylg = utils.hsl_to_hex( 80, 50, 60), --"#77CC66"
+        grn = utils.hsl_to_hex(110, 50, 60), --"#66CC88"
+        grb = utils.hsl_to_hex(140, 50, 60), --"#66CCBB"
+        blg = utils.hsl_to_hex(170, 50, 60), --"#66AACC"
+        blu = utils.hsl_to_hex(200, 50, 60), --"#6677CC"
+        blp = utils.hsl_to_hex(230, 50, 60), --"#8866CC"
+        prb = utils.hsl_to_hex(260, 50, 60), --"#BB66CC"
+        pnk = utils.hsl_to_hex(290, 50, 60), --"#CC66AA"
+        prp = utils.hsl_to_hex(320, 50, 60), --"#CC6677"
+
     }
 
     --=============================================================================
