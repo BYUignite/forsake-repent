@@ -21,7 +21,7 @@ function M.setup()
     --=============================================================================
     -- Palette
 
-    local utils = require("utils")
+    local utils = require("forsake-repent.utils")
 
     local c = {
 
