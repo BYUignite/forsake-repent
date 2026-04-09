@@ -343,6 +343,8 @@ function M.setup()
       hi! link TSConstant Constant
     ]])
 
+end
+
 --=============================================================================
 
 return M
