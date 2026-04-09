@@ -7,4 +7,4 @@ end
 
 vim.g.colors_name = "repent"
 
-require("forsake-repent.repent").setup()
+require("forsake_repent.repent").setup()

@@ -14,92 +14,92 @@ function M.setup()
     end
 
     vim.o.termguicolors = true
-    vim.g.colors_name   = "forsake"
+    vim.g.colors_name   = "repent"
 
     local hl = vim.api.nvim_set_hl
 
     --=============================================================================
     -- Palette
 
-    local utils = require("forsake-repent.utils")
+    local utils = require("forsake_repent.utils")
 
     local c = {
 
-        blk = utils.hsl_to_hex(200, 00,  0), --"#000000",
-        c00 = utils.hsl_to_hex(200, 70,  6), --"#05131A",
-        c01 = utils.hsl_to_hex(200, 60, 14), --"#0E2B39",
-        c02 = utils.hsl_to_hex(200, 50, 22), --"#1C4154",
-        c03 = utils.hsl_to_hex(200, 40, 30), --"#2E576B",
-        c04 = utils.hsl_to_hex(200, 30, 38), --"#446B7E",
-        c05 = utils.hsl_to_hex(200, 20, 46), --"#5E7D8D",
-        c06 = utils.hsl_to_hex(200, 20, 54), --"#7292A1",
-        c07 = utils.hsl_to_hex(200, 20, 62), --"#8BA5B1",
-        c08 = utils.hsl_to_hex(200, 20, 70), --"#A3B8C2",
-        c09 = utils.hsl_to_hex(200, 20, 78), --"#BCCBD2",
-        c10 = utils.hsl_to_hex(200, 20, 86), --"#D4DEE2",
-        c11 = utils.hsl_to_hex(200, 20, 94), --"#EDF1F3",
-        wht = utils.hsl_to_hex(200, 00,100), --"#ffffff",
+        blk = utils.hsl_to_hex(200, 00,  0), --"#000000"
+        c00 = utils.hsl_to_hex(200, 70,  6), --"#05131A"
+        c01 = utils.hsl_to_hex(200, 60, 14), --"#0E2B39"
+        c02 = utils.hsl_to_hex(200, 50, 22), --"#1C4154"
+        c03 = utils.hsl_to_hex(200, 40, 30), --"#2E576B"
+        c04 = utils.hsl_to_hex(200, 30, 38), --"#446B7E"
+        c05 = utils.hsl_to_hex(200, 20, 46), --"#5E7D8D"
+        c06 = utils.hsl_to_hex(200, 20, 54), --"#7292A1"
+        c07 = utils.hsl_to_hex(200, 20, 62), --"#8BA5B1"
+        c08 = utils.hsl_to_hex(200, 20, 70), --"#A3B8C2"
+        c09 = utils.hsl_to_hex(200, 20, 78), --"#BCCBD2"
+        c10 = utils.hsl_to_hex(200, 20, 86), --"#D4DEE2"
+        c11 = utils.hsl_to_hex(200, 20, 94), --"#EDF1F3"
+        wht = utils.hsl_to_hex(200, 00,100), --"#ffffff"
 
-        red = utils.hsl_to_hex(350, 50, 60), --"#CC8866"
-        org = utils.hsl_to_hex( 20, 50, 60), --"#CCBB66"
-        yel = utils.hsl_to_hex( 50, 50, 60), --"#AACC66"
-        ylg = utils.hsl_to_hex( 80, 50, 60), --"#77CC66"
-        grn = utils.hsl_to_hex(110, 50, 60), --"#66CC88"
-        grb = utils.hsl_to_hex(140, 50, 60), --"#66CCBB"
-        blg = utils.hsl_to_hex(170, 50, 60), --"#66AACC"
-        blu = utils.hsl_to_hex(200, 50, 60), --"#6677CC"
-        blp = utils.hsl_to_hex(230, 50, 60), --"#8866CC"
-        prb = utils.hsl_to_hex(260, 50, 60), --"#BB66CC"
-        pnk = utils.hsl_to_hex(290, 50, 60), --"#CC66AA"
-        prp = utils.hsl_to_hex(320, 50, 60), --"#CC6677"
+        red = utils.hsl_to_hex(350, 90, 30), --"#91081F"
+        org = utils.hsl_to_hex( 20, 90, 30), --"#913608"
+        yel = utils.hsl_to_hex( 50, 90, 30), --"#917A08"
+        ylg = utils.hsl_to_hex( 80, 90, 30), --"#639108"
+        grn = utils.hsl_to_hex(110, 90, 30), --"#1F9108"
+        grb = utils.hsl_to_hex(140, 90, 30), --"#089136"
+        blg = utils.hsl_to_hex(170, 90, 30), --"#08917A"
+        blu = utils.hsl_to_hex(200, 90, 30), --"#086391"
+        blp = utils.hsl_to_hex(230, 90, 30), --"#081F91"
+        prb = utils.hsl_to_hex(260, 90, 30), --"#360891"
+        pnk = utils.hsl_to_hex(290, 90, 30), --"#7A0891"
+        prp = utils.hsl_to_hex(320, 90, 30), --"#910863"
 
     }
 
     --=============================================================================
     ------------------- Terminal colors
 
-    vim.g.terminal_color_0  = c.c07
+    vim.g.terminal_color_0  = c.c01
     vim.g.terminal_color_1  = c.red
     vim.g.terminal_color_2  = c.grb
     vim.g.terminal_color_3  = c.yel
-    vim.g.terminal_color_4  = c.blg
-    vim.g.terminal_color_5  = c.org
-    vim.g.terminal_color_6  = c.blg
-    vim.g.terminal_color_7  = c.blk
-    vim.g.terminal_color_8  = c.c07
+    vim.g.terminal_color_4  = c.blu
+    vim.g.terminal_color_5  = c.prp
+    vim.g.terminal_color_6  = c.blu
+    vim.g.terminal_color_7  = c.wht
+    vim.g.terminal_color_8  = c.c01
     vim.g.terminal_color_9  = c.red
     vim.g.terminal_color_10 = c.grb
     vim.g.terminal_color_11 = c.yel
-    vim.g.terminal_color_12 = c.blg
-    vim.g.terminal_color_13 = c.org
-    vim.g.terminal_color_14 = c.blk
-    vim.g.terminal_color_15 = c.c07
+    vim.g.terminal_color_12 = c.blu
+    vim.g.terminal_color_13 = c.prp
+    vim.g.terminal_color_14 = c.blu
+    vim.g.terminal_color_15 = c.wht
 
     --=============================================================================
     -- highlight group colors
     -- variables used multiple times
 
-    local Normal     = { fg = c.c07, bg = c.c01 }
-    local Cursor     = { fg = c.c11, bg = c.blk }
+    local Normal     = { fg = c.c02, bg = c.wht }
+    local Cursor     = { fg = c.blk, bg = c.wht }
     local FoldColumn = { fg = c.c06 } 
-    local Visual     = { fg = c.c08, bg = c.c02 } 
-    local Search     = { fg = c.c10, bg = c.c05 } 
-    local VertSplit  = { fg = c.c04 } 
-    local TabLine    = { fg = c.c05, bg = c.c01 } 
-    local Comment    = { fg = c.c04, italic = true }
+    local Visual     = { bg = c.c10 } 
+    local Search     = { fg = c.wht, bg = c.c05 } 
+    local VertSplit  = { fg = c.c03 } 
+    local TabLine    = { fg = c.c02, bg = c.c11 } 
+    local Comment    = { fg = c.c07, italic = true }
     local String     = { fg = c.blu }
     local Number     = { fg = c.blu }
-    local Error      = { fg = c.wht, bg=c.ppr }
+    local Error      = { fg = c.wht, bg=c.red }
     local Warning    = { bg = c.yel, bold = true }
 
     ------------------- status line 
 
-    hl(0, "SLine1",  { fg=c.c05, bg=c.c01, bold=true })
-    hl(0, "Trans1",  { fg=c.c07, bg=c.c03})
-    hl(0, "SLine2",  { fg=c.c07, bg=c.c03, bold=true })
-    hl(0, "Trans2",  { fg=c.c03, bg=c.c01})
-    hl(0, "SLine3",  { fg=c.c05, bg=c.c01 })
-    hl(0, "Trans3",  { fg=c.c07, bg=c.c01})
+    hl(0, "SLine1",  { fg=c.c11, bg=c.c02, bold=true })
+    hl(0, "Trans1",  { fg=c.c02, bg=c.c08})
+    hl(0, "SLine2",  { fg=c.c01, bg=c.c08, bold=true })
+    hl(0, "Trans2",  { fg=c.c08, bg=c.c11})
+    hl(0, "SLine3",  { fg=c.c01, bg=c.c11 })
+    hl(0, "Trans3",  { fg=c.c02, bg=c.c11})
 
     ------------------- general editor
 
@@ -108,9 +108,9 @@ function M.setup()
     hl(0, "EndOfBuffer",  Normal)
     hl(0, "Cursor",       Cursor)
     hl(0, "CursorLine",   { bold = true })
-    hl(0, "CursorColumn", { bg = c.c01 })
-    hl(0, "ColorColumn",  Normal)
-    hl(0, "LineNr",       { fg = c.c03 })
+    hl(0, "CursorColumn", { bg = c.c11 })
+    hl(0, "ColorColumn",  { bg = c.c11 })
+    hl(0, "LineNr",       { fg = c.c10 })
     hl(0, "CursorLineNr", { fg = c.c06, bold = true })
     hl(0, "FoldColumn",   FoldColumn)
     hl(0, "SignColumn",   FoldColumn)
@@ -132,7 +132,7 @@ function M.setup()
     hl(0, "WarningMsg",   Warning)
     hl(0, "Conceal",      Normal)
     hl(0, "Whitespace",   Normal)
-    hl(0, "ModeMsg",      Normal)
+    hl(0, "ModeMsg",      { fg = c.wht, bg=c.c02 })
     hl(0, "Title",        { fg = c.red, bold = true })
     hl(0, "SpecialKey",   { fg = c.red })
 
@@ -144,15 +144,15 @@ function M.setup()
     hl(0, "TabLineFill",   TabLine)
     hl(0, "StatusLine",    { fg = c.c01, bg = c.c08, bold = true })
     hl(0, "StatusLineNC",  { fg = c.c01, bg = c.c11 })
-    hl(0, "TabLineSel",    { fg = c.c01, bg = c.c07, bold = true })
+    hl(0, "TabLineSel",    { fg = c.c11, bg = c.c02, bold = true })
 
     ------------------- floating windows
 
     hl(0, "NormalFloat",   Normal)
-    hl(0, "Pmenu",         { bg = c01 })
-    hl(0, "PmenuSel",      { bg = c.c02, bold = true })
-    hl(0, "PmenuSbar",     { fg = c.c11, bg = c.c01 })
-    hl(0, "PmenuThumb",    { fg = c.wht, bg = c.c02 })
+    hl(0, "Pmenu",         { bg = c11 })
+    hl(0, "PmenuSel",      { bg = c.c09, bold = true })
+    hl(0, "PmenuSbar",     { fg = c.wht, bg = c.c02 })
+    hl(0, "PmenuThumb",    { fg = c.wht, bg = c.c04 })
 
     ------------------- syntax
 
@@ -174,11 +174,11 @@ function M.setup()
     hl(0, "Keyword",    { fg = c.red, bold = true })
     hl(0, "Exception",  { fg = c.red })
 
-    hl(0, "PreProc",    { fg = c.pnk })
-    hl(0, "Include",    { fg = c.pnk })
-    hl(0, "Define",     { fg = c.pnk })
-    hl(0, "Macro",      { fg = c.pnk })
-    hl(0, "PreCondit",  { fg = c.pnk })
+    hl(0, "PreProc",    { fg = c.prp })
+    hl(0, "Include",    { fg = c.prp })
+    hl(0, "Define",     { fg = c.prp })
+    hl(0, "Macro",      { fg = c.prp })
+    hl(0, "PreCondit",  { fg = c.prp })
 
     hl(0, "Type",        { fg = c.grb })
     hl(0, "StorageClass",{ fg = c.grb })
@@ -200,7 +200,7 @@ function M.setup()
 
     ------------------- treesitter
 
-    hl(0, "@variable",        { fg = c.c09 })
+    hl(0, "@variable",        { fg = c.c02 })
     hl(0, "@variable.builtin",{ fg = c.red })
     hl(0, "@property",        { fg = c.blp })
     hl(0, "@field",           { fg = c.blu })
@@ -225,7 +225,7 @@ function M.setup()
     hl(0, "@string.regex",    { fg = c.blu })
     hl(0, "@string.special",  { fg = c.blu })
 
-    hl(0, "@comment",         { fg = c.c04, italic = true })
+    hl(0, "@comment",         { fg = c.c07, italic = true })
     hl(0, "@comment.warning", { fg = c.yel, bold = true })
     hl(0, "@comment.error",   { fg = c.wht, bg = c.red })
 
@@ -237,13 +237,13 @@ function M.setup()
     hl(0, "@type",            { fg = c.grb })
     hl(0, "@type.builtin",    { fg = c.yel })
     hl(0, "@attribute",       { fg = c.blu })
-    hl(0, "@namespace",       { fg = c.c07 })
-    hl(0, "@punctuation",     { fg = c.c07 })
+    hl(0, "@namespace",       { fg = c.c04 })
+    hl(0, "@punctuation",     { fg = c.c04 })
     hl(0, "@tag",             { fg = c.red })
     hl(0, "@tag.attribute",   { fg = c.blu })
-    hl(0, "@tag.delimiter",   { fg = c.c07 })
+    hl(0, "@tag.delimiter",   { fg = c.c04 })
 
-    hl(0, "@text",            { fg = c.c10 })
+    hl(0, "@text",            { fg = c.c02 })
     hl(0, "@text.title",      { fg = c.blu, bold = true })
     hl(0, "@text.literal",    { fg = c.grb })
     hl(0, "@text.uri",        { fg = c.blu, underline = true })
@@ -273,10 +273,10 @@ function M.setup()
 
     ------------------- diff
 
-    hl(0, "DiffAdd",    { fg = c.c10, bg = c.grb })
-    hl(0, "DiffChange", { fg = c.blk, bg = c.org })
-    hl(0, "DiffText",   { fg = c.c10, bg = c.org })
-    hl(0, "DiffDelete", { fg = c.c10, bg = c.ppr })
+    hl(0, "DiffAdd",    { fg = c.blk, bg = c.c10 })
+    hl(0, "DiffChange", { fg = c.wht, bg = c.c08 })
+    hl(0, "DiffText",   { fg = c.blk, bg = c.c08 })
+    hl(0, "DiffDelete", { fg = c.c10, bg = c.c10 })
 
     ------------------- git
 
@@ -294,15 +294,15 @@ function M.setup()
 
     ------------------- plugins
 
-    hl(0, "TelescopeNormal",      { bg = c.c01 })
-    hl(0, "TelescopeSelection",   { bg = c.c02, bold = true })
+    hl(0, "TelescopeNormal",      { bg = c.c11 })
+    hl(0, "TelescopeSelection",   { bg = c.c09, bold = true })
     hl(0, "TelescopeBorder",      VertSplit)
     hl(0, "TelescopePromptBorder",VertSplit)
-    hl(0, "TelescopePromptNormal",{ fg = c.c09, bg = c.wht })
-    hl(0, "TelescopePromptPrefix",{ fg = c.c09, bg = c.wht })
-    hl(0, "TelescopeMatching",    { fg = c.c07, bold = true })
+    hl(0, "TelescopePromptNormal",{ fg = c.c02, bg = c.wht })
+    hl(0, "TelescopePromptPrefix",{ fg = c.c02, bg = c.wht })
+    hl(0, "TelescopeMatching",    { fg = c.c04, bold = true })
 
-    hl(0, "NvimTreeNormal",       { fg = c.c09, bg = c.bg })
+    hl(0, "NvimTreeNormal",       { fg = c.c02, bg = c.bg })
     hl(0, "NvimTreeEndOfBuffer",  { fg = c.wht, bg = c.wht })
     hl(0, "NvimTreeFolderName",   { fg = c.blg })
     hl(0, "NvimTreeRootFolder",   { fg = c.red, bold = true })
@@ -310,27 +310,27 @@ function M.setup()
     hl(0, "NvimTreeGitNew",       { fg = c.grb })
     hl(0, "NvimTreeGitDeleted",   { fg = c.red })
 
-    hl(0, "CmpItemAbbr",          { fg = c.c09 })
+    hl(0, "CmpItemAbbr",          { fg = c.c02 })
     hl(0, "CmpItemAbbrMatch",     { fg = c.yel, bold = true })
     hl(0, "CmpItemAbbrMatchFuzzy",{ fg = c.yel, bold = true })
-    hl(0, "CmpItemMenu",          { fg = c.c07 })
+    hl(0, "CmpItemMenu",          { fg = c.c04 })
     hl(0, "CmpItemKindFunction",  { fg = c.blg })
     hl(0, "CmpItemKindMethod",    { fg = c.blg })
-    hl(0, "CmpItemKindVariable",  { fg = c.c09 })
+    hl(0, "CmpItemKindVariable",  { fg = c.c02 })
     hl(0, "CmpItemKindKeyword",   { fg = c.red })
     hl(0, "CmpItemKindText",      { fg = c.grb })
     hl(0, "CmpItemKindSnippet",   { fg = c.prp })
 
     hl(0, "DashboardHeader",      { fg = c.blg, bold = true })
-    hl(0, "DashboardCenter",      { fg = c.c09 })
+    hl(0, "DashboardCenter",      { fg = c.c02 })
     hl(0, "DashboardShortcut",    { fg = c.blu })
-    hl(0, "DashboardFooter",      { fg = c.c04, italic = true })
+    hl(0, "DashboardFooter",      { fg = c.c07, italic = true })
 
     hl(0, "WhichKey",             { fg = c.blg })
     hl(0, "WhichKeyGroup",        { fg = c.prp })
-    hl(0, "WhichKeyDesc",         { fg = c.c09 })
-    hl(0, "WhichKeySeparator",    { fg = c.c07 })
-    hl(0, "WhichKeyFloat",        { bg = c.c01 })
+    hl(0, "WhichKeyDesc",         { fg = c.c02 })
+    hl(0, "WhichKeySeparator",    { fg = c.c04 })
+    hl(0, "WhichKeyFloat",        { bg = c.c11 })
 
     --=============================================================================
     -- link groups
