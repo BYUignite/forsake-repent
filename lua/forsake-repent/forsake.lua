@@ -129,7 +129,7 @@ function M.setup()
     hl(0, "WarningMsg",   Warning)
     hl(0, "Conceal",      Normal)
     hl(0, "Whitespace",   Normal)
-    hl(0, "ModeMsg",      { Normal })
+    hl(0, "ModeMsg",      Normal)
     hl(0, "Title",        { fg = c.red, bold = true })
     hl(0, "SpecialKey",   { fg = c.red })
 
