@@ -21,7 +21,7 @@ function M.setup()
     --=============================================================================
     -- Palette
 
-    utils = require("utils")
+    local utils = require("utils")
 
     local c = {
 
