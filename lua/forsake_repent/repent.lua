@@ -296,6 +296,8 @@ function M.setup()
 
     hl(0, "BlinkCmpMenu",         { fg = c.blk, bg = c.c11 })
 
+    hl(0, "BufferCurrentSign",    { bg = c.c02 })      -- line between barbar tabs
+
     hl(0, "TelescopeNormal",      { bg = c.c11 })
     hl(0, "TelescopeSelection",   { bg = c.c09, bold = true })
     hl(0, "TelescopeBorder",      VertSplit)
