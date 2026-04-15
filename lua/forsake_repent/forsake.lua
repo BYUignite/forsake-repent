@@ -293,6 +293,8 @@ function M.setup()
 
     ------------------- plugins
 
+    hl(0, "BlinkCmpMenu",         { fg = c.wht, bg = c.c01 })
+
     hl(0, "TelescopeNormal",      { bg = c.c01 })
     hl(0, "TelescopeSelection",   { bg = c.c02, bold = true })
     hl(0, "TelescopeBorder",      VertSplit)

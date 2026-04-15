@@ -294,6 +294,8 @@ function M.setup()
 
     ------------------- plugins
 
+    hl(0, "BlinkCmpMenu",         { fg = c.blk, bg = c.c11 })
+
     hl(0, "TelescopeNormal",      { bg = c.c11 })
     hl(0, "TelescopeSelection",   { bg = c.c09, bold = true })
     hl(0, "TelescopeBorder",      VertSplit)
