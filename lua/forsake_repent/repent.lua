@@ -244,7 +244,7 @@ function M.setup()
     hl(0, "@tag.delimiter",   { fg = c.c04 })
 
     hl(0, "@text",            { fg = c.c02 })
-    hl(0, "@text.title",      { fg = c.blu, bold = true })
+    hl(0, "@text.title",      { fg = c.wht, bold = true })
     hl(0, "@text.literal",    { fg = c.grb })
     hl(0, "@text.uri",        { fg = c.blu, underline = true })
     hl(0, "@text.reference",  { fg = c.prp })
