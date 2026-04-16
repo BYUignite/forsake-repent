@@ -169,7 +169,7 @@ function M.setup()
     hl(0, "Conditional",{ fg = c.red })
     hl(0, "Repeat",     { fg = c.red })
     hl(0, "Label",      { fg = c.red })
-    hl(0, "Operator",   { fg = c.blue })
+    hl(0, "Operator",   { fg = c.blu })
     hl(0, "Keyword",    { fg = c.red, bold = true })
     hl(0, "Exception",  { fg = c.red })
 
