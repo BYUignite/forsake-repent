@@ -336,10 +336,10 @@ function M.setup()
     hl(0, "WhichKeyFloat",        { bg = c.c01 })
 
     hl(0, "CodeBlock", { fg=c.c08, bg=c.c01 })  -- headlines
-    hl(0, "Headline1", { fg=c.c08, bg=c.c09 })
-    hl(0, "Headline2", { fg=c.c08, bg=c.c07 })
-    hl(0, "Headline3", { fg=c.c08, bg=c.c05 })
-    hl(0, "Headline4", { fg=c.c08, bg=c.c03 })
+    hl(0, "Headline1", { fg=c.blk, bg=c.c08 })
+    hl(0, "Headline2", { fg=c.blk, bg=c.c05 })
+    hl(0, "Headline3", { fg=c.blk, bg=c.c04 })
+    hl(0, "Headline4", { fg=c.c08, bg=c.c02 })
     hl(0, "Dash",      { fg=c.c05, bg=c.c00 })
 
     hl(0, "MoltenCell", {})                       -- molten, defaults to CursorLine, but don't want that
