@@ -337,7 +337,7 @@ function M.setup()
     hl(0, "WhichKeySeparator",    { fg = c.c04 })
     hl(0, "WhichKeyFloat",        { bg = c.c11 })
 
-    hl(0, "CodeBlock", { fg=c.c01, bg=c.c11 })  -- headlines
+    hl(0, "CodeBlock", { fg=c.c01, bg=c.c12 })  -- headlines
     hl(0, "Headline1", { fg=c.wht, bg=c.c01 })
     hl(0, "Headline2", { fg=c.wht, bg=c.c03 })
     hl(0, "Headline3", { fg=c.wht, bg=c.c05 })
